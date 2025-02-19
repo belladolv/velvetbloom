@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Velvet Bloom</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#" id="fav-link">Favoritos (0)</a></li>
+                <li><a href="#" id="cart-link">Carrinho (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="capa">
+        <div class="capa-content">
+            <h2>Descubra a Beleza que Floresce em Você</h2>
+            <p>Encontre os melhores produtos de maquiagem para realçar sua beleza única.</p>
+            <a href="#produtos" class="btn">Veja Nossos Produtos</a>
+        </div>
+    </section>
+    
+
+    <!-- Seção Hero (Início) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Descubra a beleza que floresce em você</h2>
+            <p>Produtos e serviços de maquiagem para todos os tons de pele.</p>
+            <a href="#produtos" class="btn">Explore nossos produtos</a>
+        </div>
+    </section>
+<!-- Seção Sobre Nós -->
+<section class="sobre-nos">
+    <div class="sobre-nos-content">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma marca dedicada a proporcionar os melhores produtos de maquiagem para realçar sua beleza e confiança. Nossa missão é oferecer produtos de qualidade, inovadores e acessíveis, sempre com o compromisso de satisfazer as necessidades de nossos clientes.</p>
+        <p>Com uma vasta gama de produtos, temos opções para todos os tipos de pele e gostos. Nosso objetivo é ser a sua referência quando o assunto é maquiagem de alta performance.</p>
+    </div>
+</section>
+
+<!-- Seção Perguntas Frequentes (FAQ) -->
+<section class="faq">
+    <div class="faq-content">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-item">
+            <h3>Como faço para realizar uma compra?</h3>
+            <p>Para realizar uma compra, basta navegar pelas nossas categorias de produtos, escolher os itens desejados e adicionar ao carrinho. Em seguida, finalize sua compra através do processo de pagamento.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Posso trocar um produto?</h3>
+            <p>Sim! Oferecemos trocas dentro de um prazo específico. Verifique a nossa política de trocas para mais detalhes.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Quais métodos de pagamento são aceitos?</h3>
+            <p>Aceitamos cartões de crédito, débito, PayPal e boletos bancários. Escolha o método que melhor se adapta a você no momento da finalização da compra.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-container">
+            <!-- Produtos de Maquiagem -->
+            <div class="produto">
+                <img src="imagens/base-clara.jpg" alt="Base Clara">
+                <h3>Base Líquida - Clara</h3>
+                <p>Cobertura leve e natural para peles claras.</p>
+                <p class="preco">R$ 89,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Base Líquida - Clara', 89.90)">❤️</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/base-media.jpg" alt="Base Média">
+                <h3>Base Líquida - Média</h3>
+                <p>Perfeita para peles com tons médios.</p>
+                <p class="preco">R$ 89,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Base Líquida - Média', 89.90)">❤️</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/base-escura.jpg" alt="Base Escura">
+                <h3>Base Líquida - Escura</h3>
+                <p>Cobertura impecável para peles escuras.</p>
+                <p class="preco">R$ 89,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Base Líquida - Escura', 89.90)">❤️</button>
+            </div>
+
+            <!-- Batons -->
+            <div class="produto">
+                <img src="imagens/batom-vermelho.jpg" alt="Batom Vermelho">
+                <h3>Batom Matte - Vermelho</h3>
+                <p>Vermelho clássico para um look marcante.</p>
+                <p class="preco">R$ 59,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Batom Matte - Vermelho', 59.90)">❤️</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/batom-rosa.jpg" alt="Batom Rosa">
+                <h3>Batom Matte - Rosa</h3>
+                <p>Rosa delicado para um visual suave.</p>
+                <p class="preco">R$ 59,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Batom Matte - Rosa', 59.90)">❤️</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/batom-nude.jpg" alt="Batom Nude">
+                <h3>Batom Matte - Nude</h3>
+                <p>Nude versátil para qualquer ocasião.</p>
+                <p class="preco">R$ 59,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Batom Matte - Nude', 59.90)">❤️</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/batom-vinho.jpg" alt="Batom Vinho">
+                <h3>Batom Matte - Vinho</h3>
+                <p>Vinho intenso para um look sofisticado.</p>
+                <p class="preco">R$ 59,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Batom Matte - Vinho', 59.90)">❤️</button>
+            </div>
+
+            <!-- Iluminadores -->
+            <div class="produto">
+                <img src="imagens/iluminador-rosa.jpg" alt="Iluminador Rosa">
+                <h3>Iluminador Líquido - Rosa</h3>
+                <p>Brilho suave para um visual natural.</p>
+                <p class="preco">R$ 79,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Iluminador Líquido - Rosa', 79.90)">❤️</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/iluminador-dourado.jpg" alt="Iluminador Dourado">
+                <h3>Iluminador Líquido - Dourado</h3>
+                <p>Brilho intenso para um visual radiante.</p>
+                <p class="preco">R$ 79,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Iluminador Líquido - Dourado', 79.90)">❤️</button>
+            </div>
+
+            <!-- Pó Facial -->
+            <div class="produto">
+                <img src="imagens/po-translucido.jpg" alt="Pó Translúcido">
+                <h3>Pó Facial - Translúcido</h3>
+                <p>Fixador para um acabamento impecável.</p>
+                <p class="preco">R$ 59,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Pó Facial - Translúcido', 59.90)">❤️</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/po-mate.jpg" alt="Pó Matte">
+                <h3>Pó Facial - Matte</h3>
+                <p>Controle de oleosidade para uma pele aveludada.</p>
+                <p class="preco">R$ 59,90</p>
+                <button class="btn-comprar">Comprar</button>
+                <button class="btn-favoritar" onclick="adicionarFavorito('Pó Facial - Matte', 59.90)">❤️</button>
+            </div>
+        </div>
+    </section>
+
+   <!-- Seção de Dúvidas Frequentes -->
+<section class="duvidas">
+    <div class="duvidas-content">
+        <h2>Dúvidas Frequentes</h2>
+        
+        <!-- Perguntas e Respostas -->
+        <div class="faq">
+            <div class="faq-item">
+                <h3 class="faq-pergunta">Como faço para comprar um produto?</h3>
+                <p class="faq-resposta">Para comprar, basta selecionar o produto, adicionar ao carrinho e seguir os passos para finalizar a compra.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-pergunta">Quais formas de pagamento são aceitas?</h3>
+                <p class="faq-resposta">Aceitamos cartões de crédito, débito, boleto bancário e pagamentos via PayPal.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-pergunta">Como posso rastrear meu pedido?</h3>
+                <p class="faq-resposta">Após o envio, você receberá um código de rastreamento por e-mail.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-pergunta">Posso devolver um produto?</h3>
+                <p class="faq-resposta">Sim, temos uma política de devolução de 30 dias, desde que o produto não tenha sido usado e esteja em sua embalagem original.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Seção Onde Estamos -->
+<section class="onde-estamos">
+    <div class="onde-estamos-content">
+        <h2>Onde Estamos</h2>
+        <p>Nosso endereço e como chegar até nós.</p>
+        
+        <div class="informacoes-localizacao">
+            <p><strong>Endereço:</strong> Rua Exemplo, 123 - Bairro Centro - Cidade, Estado, Brasil</p>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta, das 9h às 18h</p>
+        </div>
+        
+        <!-- Mapa de Localização -->
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Seção de Contato -->
+<section class="contato">
+    <div class="contato-content">
+        <h2>Entre em Contato</h2>
+        <p>Tem alguma dúvida ou sugestão? Estamos à disposição para ajudar! Preencha o formulário abaixo e entraremos em contato com você o mais rápido possível.</p>
+        
+        <!-- Formulário de Contato -->
+        <form action="enviar_contato.php" method="POST">
+            <div class="form-group">
+                <label for="nome">Seu Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Seu E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Sua Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
+    </div>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
